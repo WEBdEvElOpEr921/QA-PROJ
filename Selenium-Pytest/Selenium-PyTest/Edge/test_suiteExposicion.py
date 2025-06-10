@@ -12,7 +12,8 @@ options.add_argument('--incognito')
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
 options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
-driver = webdriver.Edge(executable_path='C:/ANtonioRodriguez/EdgeDriver/msedgedriver.exe', options = options)
+driver = webdriver.Edge(executable_path='C:/Users/rawal/Drivers/msedgedriver.exe
+', options = options)
 
 
 """Test E2E de la seccion Exposicion en Internet"""

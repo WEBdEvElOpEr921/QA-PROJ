@@ -4,12 +4,16 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.edge.service import Service
+
+print("Test started")
+
 
 
 options = Options()
 #options.add_argument('--headless')
 options.binary_location = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
-driver = webdriver.Edge(executable_path='C:/AntonioRodriguez/EdgeDriver/msedgedriver.exe', options = options)
+service = Service('C:/Users/rawal/Drivers/msedgedriver.exe')
 
 
 """
@@ -193,6 +197,8 @@ class TestPurchase:
 
         city.send_keys('Madrid')
         time.sleep(0.3)
+
+
 
     # Cancel changes
     def test_14_cancelChange(self):
